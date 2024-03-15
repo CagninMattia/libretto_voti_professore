@@ -2,6 +2,7 @@
 
 import dataclasses
 
+
 @dataclasses.dataclass
 class Voto:
     esame: str
@@ -96,7 +97,7 @@ class Libretto:
         for v in self._voti:
             if v.esame == voto.esame and not(v.punteggio == voto.punteggio and v.lode == voto.lode):
             # if v.esame == voto.esame and (v.punteggio != voto.punteggio or v.lode != voto.lode):
-                    return True
+                return True
         return False
 
 
